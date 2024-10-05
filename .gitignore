@@ -5,6 +5,9 @@ dist
 tmp
 /out-tsc
 
+# exclude local development environment file
+.env
+
 # dependencies
 node_modules
 

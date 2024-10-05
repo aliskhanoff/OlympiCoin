@@ -1,4 +1,19 @@
-# Olympicoin
+# Olympicoin 
+### Clicker crypto game 
+
+### 1: Architecture ```[inspired by uncle Bob]: ```
+
+## Database & Caching
+
+| Logo          | Name          |
+| ------------- | ------------- |
+| <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbrandlogos.net%2Fwp-content%2Fuploads%2F2021%2F11%2Fpostgresql-logo.png&f=1&nofb=1&ipt=775054c2754d354fe9ce1d1ff348ffa64d8f73bcdc552d64ec3865ab2cda856f&ipo=images" width="45"></a> | Postgres      |
+| <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://www.liblogo.com/img-logo/re310r2a0-redis-logo-redis-logo.png" width="45"></a>  | Redis |
+| <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://e7.pngegg.com/pngimages/306/37/png-clipart-node-js-logo-node-js-javascript-web-application-express-js-computer-software-others-miscellaneous-text.png" width="45"></a> | Node |
+| <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://vitejs.dev/logo-with-shadow.png"  height='45'></a> | vite |
+| <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://avatars.githubusercontent.com/u/24939410?v=4"  height='45'></a> | fastify |
+---
+### Monorepo
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 

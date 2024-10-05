@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@olympicoin/app": ["libs/app/src/index.ts"],
+      "@olympicoin/entities": ["libs/entities/src/index.ts"],
+      "@olympicoin/features": ["libs/features/src/index.ts"],
+      "@olympicoin/framework": ["packages/framework/src/index.ts"],
+      "@olympicoin/pages": ["libs/pages/src/index.ts"],
+      "@olympicoin/shared": ["libs/shared/src/index.ts"],
+      "@olympicoin/types": ["packages/types/src/index.ts"],
+      "@olympicoin/widgets": ["libs/widgets/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
