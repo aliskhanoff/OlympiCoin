@@ -1,14 +1,9 @@
 import type { ButtonProps } from "./types"
+import { getDefaultGenericSize } from "@olympicoin/types"
 
 export const Button: React.FC<ButtonProps> = ({ children, rounded=false, sizeVariant = "md", styleVariants = "primary", outlined = false, fullWidth = false,  tagType, className = "", link, ...rest }: ButtonProps ) => {
     const fullWidthStyle = fullWidth && "w-full"
-    
-    const paddingSize = {
-        sm: "py-1 px-3 text-[1rem]",
-        md: "py-2 px-4 text-[1.1rem]",
-        lg: "py-2 px-4 text-[1.15rem]",
-        xl: "py-3 px-5 text-[1.25rem]",
-    }[sizeVariant]
+    const paddingSize = getDefaultGenericSize(sizeVariant)
 
     /**
      * todo:
@@ -34,25 +29,25 @@ export const Button: React.FC<ButtonProps> = ({ children, rounded=false, sizeVar
 }
 
 export const PrimaryButton = ({ children, className = "", ...rest }: ButtonProps) => {
-    return (<Button {...rest} className={`${className}`} variant="primary" {...rest}>{children}</Button>)
+    return (<Button {...rest} className={`${className}`} styleVariants="primary" {...rest}>{children}</Button>)
 }
 
 export const SuccessButton = ({ children, className = "", ...rest }: ButtonProps) => {
-    return (<Button {...rest} className={`${className}`} variant="success" {...rest}>{children}</Button>)
+    return (<Button {...rest} className={`${className}`} styleVariants="success" {...rest}>{children}</Button>)
 }
 export const InfoButton = ({ children, className = "", ...rest }: ButtonProps) => {
-    return (<Button {...rest} className={`${className}`} variant="info" {...rest}>{children}</Button>)
+    return (<Button {...rest} className={`${className}`} styleVariants="info" {...rest}>{children}</Button>)
 }
 
 export const DangerButton = ({ children, className = "", ...rest }: ButtonProps) => {
-    return (<Button {...rest} className={`${className}`} variant="danger" {...rest}>{children}</Button>)
+    return (<Button {...rest} className={`${className}`} styleVariants="danger" {...rest}>{children}</Button>)
 }
 
 export const WarningButton = ({ children, className = "", ...rest }: ButtonProps) => {
-    return (<Button {...rest} className={`${className}`} variant="warning" {...rest}>{children}</Button>)
+    return (<Button {...rest} className={`${className}`} styleVariants="warning" {...rest}>{children}</Button>)
 }
 
 export const DarkButton = ({ children, className = "", ...rest }: ButtonProps) => {
-    return (<Button {...rest} className={`${className}`} variant="dark" {...rest}>{children}</Button>)
+    return (<Button {...rest} className={`${className}`} styleVariants="dark" {...rest}>{children}</Button>)
 }
 
