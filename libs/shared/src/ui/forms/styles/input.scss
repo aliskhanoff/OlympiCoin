@@ -1,0 +1,159 @@
+.input-container {  @apply flex flex-row items-center gap-1 transition-all border-2 duration-300; .input { @apply border-0; } }
+.input { @apply outline-none transition-all border-2 duration-300 }
+
+.input.primary, .input-container.primary { 
+    @apply border-blue-300 text-blue-300 hover:placeholder:text-blue-400 focus:border-blue-500 focus:text-blue-500 placeholder:text-blue-300 focus:placeholder:text-blue-500;
+}
+
+.input-container.primary {
+    .input {
+        @apply placeholder:text-blue-300 
+    }
+
+    &:hover, &:focus-within  {
+        @apply border-blue-400 text-blue-400;
+        
+        .input {
+            @apply placeholder:text-blue-400; 
+        }
+    }
+
+    &:not(:empty) {
+        .input {
+            @apply  text-blue-600;
+        }
+    }
+
+}
+
+
+.input.danger, .input-container.danger { 
+    @apply border-red-300 text-red-300 hover:placeholder:text-red-400 focus:border-red-500 focus:text-red-500 placeholder:text-red-300 focus:placeholder:text-red-500;
+}
+
+.input-container.danger {
+    .input {
+        @apply placeholder:text-red-300 
+    }
+
+    &:hover, &:focus-within {
+        @apply border-red-400 text-red-400;
+        
+        .input {
+            @apply placeholder:text-red-400; 
+        }
+    }
+
+    &:not(:empty) {
+        .input {
+            @apply  text-red-600;
+        }
+    }
+
+}
+
+.input.input.warning, .input-container.input.warning { 
+    @apply border-orange-300 text-orange-300 hover:placeholder:text-orange-400 focus:border-orange-500 focus:text-orange-500 placeholder:text-orange-300 focus:placeholder:text-orange-500;
+}
+
+.input-container.warning {
+    .input {
+        @apply placeholder:text-orange-300 
+    }
+
+    &:hover, &:focus-within {
+        @apply border-orange-400 text-orange-400;
+        
+        .input {
+            @apply placeholder:text-orange-400; 
+        }
+    }
+
+    &:not(:empty) {
+        .input {
+            @apply  text-orange-600;
+        }
+    }
+
+}
+
+.input.input.info, .input-container.input.info { 
+    @apply border-cyan-300 text-cyan-300 hover:placeholder:text-cyan-400 focus:border-cyan-500 focus:text-cyan-500 placeholder:text-cyan-300 focus:placeholder:text-cyan-500;
+}
+
+.input-container.info {
+    .input {
+        @apply placeholder:text-cyan-300 
+    }
+
+    &:hover, &:focus-within  {
+        @apply border-cyan-400 text-cyan-400;
+        
+        .input {
+            @apply placeholder:text-cyan-400; 
+        }
+    }
+
+    &:not(:empty) {
+        .input {
+            @apply  text-cyan-600;
+        }
+    }
+
+}
+
+.input.input.dark, .input-container.input.dark { 
+    @apply border-slate-400 text-slate-400 hover:placeholder:text-slate-500 focus:border-slate-600 focus:text-slate-600 placeholder:text-slate-400 focus:placeholder:text-slate-600;
+}
+
+.input-container.dark {
+    .input {
+        @apply placeholder:text-slate-300 
+    }
+
+    &:hover, &:focus-within {
+        @apply border-slate-400 text-slate-400;
+        
+        .input {
+            @apply placeholder:text-slate-400; 
+        }
+    }
+    
+    &:not(:empty) {
+        .input {
+            @apply  text-slate-600;
+        }
+    }
+
+}
+
+.input.input.success, .input-container.input.success { 
+    @apply border-emerald-300 text-emerald-300 hover:placeholder:text-emerald-400 focus:border-emerald-500 focus:text-emerald-500 placeholder:text-emerald-300 focus:placeholder:text-emerald-500;
+}
+
+.input-container.success {
+    .input {
+        @apply placeholder:text-emerald-300 
+    }
+
+    &:hover, &:focus-within  {
+        
+        @apply border-emerald-400 text-emerald-400;
+
+        .input {
+            @apply placeholder:text-emerald-400; 
+        }
+    }
+
+    &:not(:empty) {
+        .input {
+            @apply  text-emerald-600;
+        }
+    }
+
+}
+
+.input.success, .input-container.success    { @apply border-emerald-300 text-emerald-300 hover:placeholder:text-emerald-400 focus:border-emerald-500 focus:text-emerald-500 placeholder:text-emerald-300 focus:placeholder:text-emerald-500 }
+.input.info,    .input-container.info       { @apply border-cyan-300 text-cyan-300 hover:placeholder:text-cyan-400 focus:border-cyan-500 focus:text-cyan-500 placeholder:text-cyan-300 focus:placeholder:text-cyan-500 }
+.input.warning, .input-container.warning    { @apply border-orange-300 text-orange-300 hover:placeholder:text-orange-400 focus:border-orange-500 focus:text-orange-500 placeholder:text-orange-300 focus:placeholder:text-orange-500 }
+.input.dark,    .input-container.dark       { @apply border-slate-300 text-slate-300 hover:placeholder:text-slate-400 focus:border-slate-500 focus:text-slate-500 placeholder:text-slate-300 focus:placeholder:text-slate-500 }
