@@ -1,7 +1,7 @@
 import type { ButtonProps } from "./types"
 import { getDefaultGenericSize } from "@olympicoin/types"
 
-export const Button: React.FC<ButtonProps> = ({ children, rounded=false, sizeVariant = "md", styleVariants = "primary", outlined = false, fullWidth = false,  tagType, className = "", link, ...rest }: ButtonProps ) => {
+export const Button: React.FC<ButtonProps> = ({ children, rounded=false, sizeVariant = "md", styleVariant = "primary", outlined = false, fullWidth = false,  tagType, className = "", link, ...rest }: ButtonProps ) => {
     const fullWidthStyle = fullWidth && "w-full"
     const paddingSize = getDefaultGenericSize(sizeVariant)
 
@@ -19,7 +19,7 @@ export const Button: React.FC<ButtonProps> = ({ children, rounded=false, sizeVar
         "danger":   `${outlined ? "border-2 disabled:bg-red-300/25 disabled:border-red-300/25 disabled:text-red-400/60 hover:shadow-md border-red-500 text-red-500 hover:bg-red-500 hover:text-white" : "disabled:bg-red-300/25 disabled:border-red-300/25 disabled:text-red-400/60 disabled:ring-0 disabled:shadow-0 bg-red-400  text-white ring-red-500/60  hover:bg-red-500 hover:ring-2" }`,
         "warning":  `${outlined ? "border-2 disabled:bg-orange-300/25 disabled:border-orange-300/25 disabled:text-orange-400/60 hover:shadow-md border-orange-500 text-orange-400  hover:bg-orange-500 hover:text-white": "disabled:bg-orange-300/25 disabled:border-orange-300/25 disabled:text-orange-400/60 disabled:ring-0 disabled:shadow-0 bg-orange-400 text-white ring-orange-500/60  hover:bg-orange-500 hover:ring-2"}`,
         "dark":     `${outlined ? "border-2 disabled:bg-slate-300/25 disabled:border-slate-300/25 disabled:text-slate-400/60 hover:shadow-md border-slate-700 text-slate-700  hover:bg-slate-800 hover:text-white": "disabled:bg-slate-300/25 disabled:border-slate-300/25 disabled:text-slate-400/60 disabled:ring-0 disabled:shadow-0 bg-slate-700 text-white ring-slate-800/60  hover:bg-slate-800  hover:ring-2"}`,
-    }[styleVariants]
+    }[styleVariant]
 
     const finalClassName = `${ rounded ? "rounded-full": "rounded-md" } hover:shadow-md disabled:shadow-none transition-all ${variantStyle} ${paddingSize} ${ fullWidth ? fullWidthStyle : ""} ${className}`
 
@@ -29,25 +29,25 @@ export const Button: React.FC<ButtonProps> = ({ children, rounded=false, sizeVar
 }
 
 export const PrimaryButton = ({ children, className = "", ...rest }: ButtonProps) => {
-    return (<Button {...rest} className={`${className}`} styleVariants="primary" {...rest}>{children}</Button>)
+    return (<Button {...rest} className={`${className}`} styleVariant="primary" {...rest}>{children}</Button>)
 }
 
 export const SuccessButton = ({ children, className = "", ...rest }: ButtonProps) => {
-    return (<Button {...rest} className={`${className}`} styleVariants="success" {...rest}>{children}</Button>)
+    return (<Button {...rest} className={`${className}`} styleVariant="success" {...rest}>{children}</Button>)
 }
 export const InfoButton = ({ children, className = "", ...rest }: ButtonProps) => {
-    return (<Button {...rest} className={`${className}`} styleVariants="info" {...rest}>{children}</Button>)
+    return (<Button {...rest} className={`${className}`} styleVariant="info" {...rest}>{children}</Button>)
 }
 
 export const DangerButton = ({ children, className = "", ...rest }: ButtonProps) => {
-    return (<Button {...rest} className={`${className}`} styleVariants="danger" {...rest}>{children}</Button>)
+    return (<Button {...rest} className={`${className}`} styleVariant="danger" {...rest}>{children}</Button>)
 }
 
 export const WarningButton = ({ children, className = "", ...rest }: ButtonProps) => {
-    return (<Button {...rest} className={`${className}`} styleVariants="warning" {...rest}>{children}</Button>)
+    return (<Button {...rest} className={`${className}`} styleVariant="warning" {...rest}>{children}</Button>)
 }
 
 export const DarkButton = ({ children, className = "", ...rest }: ButtonProps) => {
-    return (<Button {...rest} className={`${className}`} styleVariants="dark" {...rest}>{children}</Button>)
+    return (<Button {...rest} className={`${className}`} styleVariant="dark" {...rest}>{children}</Button>)
 }
 
