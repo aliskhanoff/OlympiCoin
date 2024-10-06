@@ -2,7 +2,7 @@
 export type GenericPropType = IGenericProp & SizeVariants & StyleVariants;
 
 export type StyleVariants = {
-    styleVariants?: "primary" | "success" | "info" | "danger" | "warning" | "dark"
+    styleVariant?: "primary" | "success" | "info" | "danger" | "warning" | "dark"
 }
 
 export type SizeVariants = {
