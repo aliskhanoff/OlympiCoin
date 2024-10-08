@@ -7,7 +7,7 @@ tmp
 
 # exclude local development environment file
 .env
-
+./pnpm-lock.yaml
 # dependencies
 node_modules
 
